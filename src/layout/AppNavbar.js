@@ -16,8 +16,15 @@ export default function AppNavbar() {
           </div> */}
           <Navbar.Brand href="/">SaasTribe</Navbar.Brand>
           <Navbar.Toggle aria-controls="my-navbar"></Navbar.Toggle>
-          <Navbar.Collapse id="my-navbar">
-            <Nav className="ml-sm-auto mr-4">
+          <Navbar.Collapse
+            id="my-navbar"
+            style={{
+              backgroundColor: '#212429',
+              zIndex: 999,
+              paddingBottom: '20px',
+            }}
+          >
+            <Nav className="ml-sm-auto mr-4" bg="dark">
               <Nav.Link className="nav-item mr-3">Home</Nav.Link>
               <NavDropdown
                 className="mr-3"
@@ -43,7 +50,7 @@ export default function AppNavbar() {
                 <CaretDownFill className="ml-1" />
               </Nav.Link>
             </Nav>
-            <Button className="purchase-btn">Purchase Now</Button>
+            <Button className="btn-radius">Purchase Now</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
