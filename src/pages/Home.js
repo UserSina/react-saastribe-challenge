@@ -9,7 +9,7 @@ export default function Home() {
         The components are in place, try adding the shape as absolutes with view
         height property or something.
       </p> */}
-      <section className="row">
+      <section className="row text-center text-md-left">
         <div className="col-lg-5 col-12">
           <Badge
             className="mb-4"
@@ -20,7 +20,7 @@ export default function Home() {
             WELCOME
           </Badge>
           <h1>Ready to help you in your projects!</h1>
-          <p className="mt-5 mb-4">
+          <p className="lead mt-5 mb-4">
             Our sales team will get in touch to better understand your needs,
             and will help you with the sign-up process.
           </p>
@@ -31,7 +31,7 @@ export default function Home() {
             Contact Sales
           </Button>
         </div>
-        <div className="col-lg-7 col-12">
+        <div className="col-lg-7 col-12 d-flex align-items-center">
           <div className="row">
             <ServiceItem />
             <ServiceItem />
