@@ -1,4 +1,12 @@
 import { Container, Badge, Button } from 'react-bootstrap';
+import {
+  PeopleFill,
+  Archive,
+  Cpu,
+  ShieldLock,
+  ChatLeftQuote,
+  Envelope,
+} from 'react-bootstrap-icons';
 import { Link } from 'react-router-dom';
 
 import ServiceItem from '../components/ServiceItem';
@@ -50,27 +58,43 @@ export default function Home() {
             <ServiceItem
               name="Accounts"
               description="Manage an unlimited number of accounts from one place"
-            />
+            >
+              <PeopleFill className="my-4 ml-2" color="royalblue" size={40} />
+            </ServiceItem>
             <ServiceItem
               name="Roles &amp; Permissions"
               description="Full control with flexibleuser permissions for views and actions"
-            />
+            >
+              <ShieldLock className="my-4 ml-2" color="royalblue" size={40} />
+            </ServiceItem>
             <ServiceItem
               name="Integration"
               description="Connect the tools you already use"
-            />
+            >
+              <Cpu className="my-4 ml-2" color="royalblue" size={40} />
+            </ServiceItem>
             <ServiceItem
               name="Chat Bots"
               description="AI powered chatbots to improve your business and customer satisfaction"
-            />
+            >
+              <ChatLeftQuote
+                className="my-4 ml-2"
+                color="royalblue"
+                size={40}
+              />
+            </ServiceItem>
             <ServiceItem
               name="In-App Messaging"
               description="Build a better business with proactive messages."
-            />
+            >
+              <Envelope className="my-4 ml-2" color="royalblue" size={40} />
+            </ServiceItem>
             <ServiceItem
               name="Knowledge Base"
               description="Create and publish answers for customers"
-            />
+            >
+              <Archive className="my-4 ml-2" color="royalblue" size={40} />
+            </ServiceItem>
           </div>
         </div>
       </section>

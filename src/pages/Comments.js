@@ -35,16 +35,11 @@ export default function Comments() {
 
   return (
     <Container className="mt-4">
-      <header className="text-center">
+      <header className="row flex-column d-flex align-items-center justify-content-center">
         <h2>Comments List </h2>
-        <span className="text-center text-muted h6">
+        <span className="text-muted h6">
           Fetched from{' '}
-          <a
-            className="h6"
-            target="_blank"
-            rel="noreferrer"
-            href={`${baseURL}/comments`}
-          >
+          <a target="_blank" rel="noreferrer" href={`${baseURL}/comments`}>
             {`${baseURL}/comments`}
           </a>
         </span>
