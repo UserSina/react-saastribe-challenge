@@ -1,5 +1,4 @@
 {
-    "html-css-class-completion.includeGlobPattern": "./src/App.css",
     "liveSassCompile.settings.formats": [
         {
             "format": "compressed",

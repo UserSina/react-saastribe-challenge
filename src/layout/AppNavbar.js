@@ -1,6 +1,8 @@
 import { Container, Button, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import { CaretDownFill } from 'react-bootstrap-icons';
 
+import { Link } from 'react-router-dom';
+
 // import logoShape from '../assets/shapes/rectangle-logo.png';
 
 export default function AppNavbar() {
@@ -25,7 +27,9 @@ export default function AppNavbar() {
             }}
           >
             <Nav className="ml-sm-auto mr-4" bg="dark">
-              <Nav.Link className="nav-item mr-3">Home</Nav.Link>
+              <Nav.Link as={Link} to="/" className="nav-item mr-3">
+                Home
+              </Nav.Link>
               <NavDropdown
                 className="mr-3"
                 title={
@@ -50,7 +54,7 @@ export default function AppNavbar() {
                 <CaretDownFill className="ml-1" />
               </Nav.Link>
             </Nav>
-            <Button className="btn-radius">Purchase Now</Button>
+            <Button className="btn-radius mt-2">Purchase Now</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>
