@@ -24,8 +24,6 @@ export default function Home() {
         <img className="shape-bottom" src={bottomShape} alt="" />
       </section>
 
-      <section></section>
-
       {/* Main Content */}
       <section className="row text-center text-lg-left">
         <div className="col-xl-4 col-12">
