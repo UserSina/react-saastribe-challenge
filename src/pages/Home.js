@@ -1,19 +1,26 @@
 import { Container, Badge, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import ServiceItem from '../components/ServiceItem';
 
+import ServiceItem from '../components/ServiceItem';
 import { kWrapperStyle } from '../constants/kStyles';
+
+import topShape from '../assets/shapes/rectangle-top.png';
+import bottomShape from '../assets/shapes/rectangle-bottom.png';
 
 export default function Home() {
   return (
     <Container style={kWrapperStyle}>
-      {/* <p>
-        Add components while ignoring the shapes as a first step. <br /> Once
-        The components are in place, try adding the shape as absolutes with view
-        height property or something.
-      </p> */}
-      <section className="row text-center text-md-left">
-        <div className="col-lg-4 col-12">
+      {/* Shapes */}
+      <section className="shapes-parent d-none d-xl-block">
+        <img className="shape-top" src={topShape} alt="" />
+        <img className="shape-bottom" src={bottomShape} alt="" />
+      </section>
+
+      <section></section>
+
+      {/* Main Content */}
+      <section className="row text-center text-lg-left">
+        <div className="col-xl-4 col-12">
           <Badge
             className="mb-4"
             pill
@@ -27,16 +34,18 @@ export default function Home() {
             Our sales team will get in touch to better understand your needs,
             and will help you with the sign-up process.
           </p>
-          <Link to="/comments">
-            <Button variant="primary" className="mr-2 btn-radius">
-              Start Now
+          <div>
+            <Link to="/comments">
+              <Button variant="primary" className="mr-0 mr-sm-2 btn-radius">
+                Start Now
+              </Button>
+            </Link>
+            <Button variant="outline-primary" className="btn-radius">
+              Contact Sales
             </Button>
-          </Link>
-          <Button variant="outline-primary" className="btn-radius">
-            Contact Sales
-          </Button>
+          </div>
         </div>
-        <div className="col-lg-8 col-12 d-flex align-items-center">
+        <div className="col-xl-8 col-12 d-flex align-items-center">
           <div className="row">
             <ServiceItem
               name="Accounts"

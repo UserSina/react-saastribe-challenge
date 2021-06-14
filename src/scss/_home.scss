@@ -1,3 +1,17 @@
-.mt-increased {
-  margin-top: 8%;
+.shapes-parent {
+  position: relative;
+}
+
+.shapes-parent .shape-top {
+  position: absolute;
+  width: 1450px;
+  left: -15%;
+  transform: translateY(35%);
+}
+
+.shapes-parent .shape-bottom {
+  position: absolute;
+  width: 950px;
+  left: 30%;
+  transform: translateY(250%);
 }

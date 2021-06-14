@@ -3,20 +3,21 @@ import { CaretDownFill } from 'react-bootstrap-icons';
 
 import { Link } from 'react-router-dom';
 
-// import logoShape from '../assets/shapes/rectangle-logo.png';
+import logoShape from '../assets/shapes/rectangle-logo.png';
 
 export default function AppNavbar() {
   return (
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container>
-          {/* FIXME: For overlapping image & text */}
-          {/* TESTME: https://www.w3schools.com/howto/howto_css_image_text.asp */}
-          {/* <div className="logo-container">
+          <div className="logo-container">
+            {/* Add "img-fluid" class to resize shape on smaller screens */}
             <img src={logoShape} alt="" />
-            <a href="/">SaasTribe</a>
-          </div> */}
-          <Navbar.Brand href="/">SaasTribe</Navbar.Brand>
+            <Navbar.Brand className="brand m-0" href="/">
+              SaasTribe
+            </Navbar.Brand>
+          </div>
+          {/* TESTME: https://www.w3schools.com/howto/howto_css_image_text.asp */}
           <Navbar.Toggle aria-controls="my-navbar"></Navbar.Toggle>
           <Navbar.Collapse
             id="my-navbar"
